@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASTION shop - Simple Website</title>
+    <style>
+        /* Basic CSS Reset - Makes styling consistent across browsers */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body styling - Sets the background color for the whole page */
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header styling - The top part of the website */
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Logo styling */
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #ffde59; /* PUMA's yellow color */
+        }
+
+        /* Navigation menu */
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #ffde59;
+        }
+
+        /* Main content area */
+        .main-content {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Hero section - The big banner at the top */
+        .hero {
+            background-image: url('https://cdn.discordapp.com/attachments/789433479057506305/1376286117199872244/image.png?ex=6834c5d4&is=68337454&hm=c25a901a9fd0b5f43a34ba6ff5790d770498cb90ffca97a2c001b393d53634d9&');
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Product cards */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #e63946;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ffde59;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #ffd700;
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with logo and navigation -->
+    <header>
+        <div class="logo">BAS<span>TION</span></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">EC</a>
+            <a href="#">CD</a>
+            <a href="#">AD</a>
+            <a href="#">NIC'S FERN CORNER</a>
+        </nav>
+    </header>
+
+    <!-- Hero banner section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>NEW COLLECTION 2025</h1>
+            <p>Bastion needs you RIGHT NOW!</p>
+            <a href="#" class="btn">JOIN NOW</a>
+        </div>
+    </section>
+
+    <!-- Main content area -->
+    <div class="main-content">
+        <h2>Featured Products</h2>
+        
+        <!-- Product listings -->
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/789433479057506305/1376287679184113665/image.png?ex=6834c748&is=683375c8&hm=c24b51cd3d178c75001ba4a07c3c40f6d2dbed7434090f19b7b7f0e8a9be8668&" alt="Nix">
+                <h3>O5-1</h3>
+                <p>Free owner</p>
+                <div class="price">$1200.00</div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/789433479057506305/1376287468864929882/image.png?ex=6834c716&is=68337596&hm=1208d9f924a547f6a3aa60ae6953125bf62bc259806a4203e9604542e8b020cf&" alt="antmanfer">
+                <h3>antmanfer</h3>
+                <p>EC DIRECTOR WOW</p>
+                <div class="price">$99.00</div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/789433479057506305/1376287918385004574/image.png?ex=6834c781&is=68337601&hm=5df38d5a740228152023c03237a3ab071f97d55caa89ecbaf165177ac53f60d7&" alt="Moo_official26">
+                <h3>Moo_official26</h3>
+                <p>CHEAP CMT</p>
+                <div class="price">$1.00</div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 BASTION (made by antmanfer). All rights reserved.</p>
+    </footer>
+
+    <!-- Simple JavaScript for interactivity -->
+    <script>
+        // This is a simple JavaScript code that shows an alert when Add to Cart is clicked
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all "Add to Cart" buttons
+            const addToCartButtons = document.querySelectorAll('.btn');
+            
+            // Add click event to each button
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    // Prevent the link from actually going anywhere
+                    e.preventDefault();
+                    
+                    // Get the product name
+                    const productName = this.parentElement.querySelector('h3').textContent;
+                    
+                    // Show a message
+                    alert(Added ${productName} to your cart!);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
